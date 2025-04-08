@@ -49,4 +49,4 @@ By combining MC Dropout with SHAP values, this app demonstrates how to measure a
 
 Made with ❤️ by Zakaria Nadir
 
-- 📫 [Email]zacanadir@gmail.com)
+📫 zacanadir@gmail.com
