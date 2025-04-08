@@ -113,7 +113,7 @@ df_report = pd.DataFrame(classification_rep).transpose()
 st.write("**Classification Report**")
 left_col, center_col, right_col = st.columns([1, 3, 1])  # Wider center column
 with center_col:
-    st.write(df_report.style.format("{:.4f}").background_gradient(cmap="Blues"))
+    st.dataframe(df_report)
 
 # Add Confusion Matrix with Plotly heatmap
 from sklearn.metrics import confusion_matrix
