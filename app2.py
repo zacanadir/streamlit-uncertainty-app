@@ -3,10 +3,8 @@ import joblib
 import pandas as pd
 from preprocess import load_data
 from sklearn.metrics import classification_report,accuracy_score
-from sklearn.model_selection import train_test_split
 from model import get_train_test_data
 from preprocess import get_preprocessor
-import matplotlib.pyplot as plt
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go

@@ -1,13 +1,10 @@
-import joblib
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras import Input, Model
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam
 import numpy as np
-from sklearn.model_selection import train_test_split
-import pandas as pd
-from preprocess import load_data
+
 
 # Define the model architecture for 4 classes
 def create_model(input_dim):
@@ -60,23 +57,3 @@ def train_and_save_model(X, y, model_path='models/model2.h5'):
 def load_mc_dropout_model(model_path='models/model2.h5'):
     return tf.keras.models.load_model(model_path)
 
-
-# Example usage for loading and predicting
-if __name__ == "__main__":
-    # Example: Loading data and preparing it
-    data=load_data()
-    X = data.drop(columns='price_range')
-    y = data['price_range']
-
-    # Split into train/test
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-    # Train and save the model
-    train_and_save_model(X_train, y_train)
-
-    # Load the trained model
-    model = load_mc_dropout_model()
-
-    # Predict with MC Dropout (example for testing)
-    predictions = predict_with_mc_dropout(model, X_test, n_iterations=50)
-    print(predictions)

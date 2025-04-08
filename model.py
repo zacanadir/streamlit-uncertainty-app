@@ -1,11 +1,8 @@
 from preprocess import load_data, get_preprocessor
 from sklearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.calibration import CalibratedClassifierCV
 import joblib
 from sklearn.model_selection import train_test_split
-import pandas as pd
-import os
 
 
 def build_pipeline(preprocessor):
