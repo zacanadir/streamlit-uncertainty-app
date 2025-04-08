@@ -41,7 +41,7 @@ By combining MC Dropout with SHAP values, this app demonstrates how to measure a
 
 ## 🔗 Try It Live
 
-👉 [Click here to launch the app](https://app-uncertainty-app-2vzxvtfqwkxgbaesjfwfyc.streamlit.app)
+👉 [Click here to launch the app](https://app-uncertainty-app-rzsgebhi54pxdeqrmj2cps.streamlit.app)
 
 ---
 
